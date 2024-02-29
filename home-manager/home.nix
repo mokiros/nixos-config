@@ -19,6 +19,18 @@
 	programs.starship.enable = true;
 	programs.home-manager.enable = true;
 
+	programs.git = {
+		enable = true;
+		userName = "mokiros";
+		userEmail = "mokiros@yandex.ru";
+		signing = {
+			key = "20D623B706CF061C!";
+			signByDefault = true;
+		};
+	};
+
+	programs.gpg.enable = true;
+
 	services.gpg-agent = {
 		enable = true;
 		defaultCacheTtl = 1800;
