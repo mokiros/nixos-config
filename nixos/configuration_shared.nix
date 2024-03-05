@@ -32,6 +32,7 @@
 	networking.networkmanager.enable = true;
 
 	environment.systemPackages = with pkgs; [ vim micro wget ];
+	programs.zsh.enable = true;
 
 	time.timeZone = "Europe/Minsk";
 	i18n.defaultLocale = "en_US.UTF-8";
@@ -43,6 +44,15 @@
 		alsa.support32Bit = true;
 		pulse.enable = true;
 		wireplumber.enable = true;
+	};
+
+	services.xserver = {
+		enable = true;
+		displayManager = {
+			sddm = {
+				enable = true;
+			};
+		};
 	};
 
 	users.users = {

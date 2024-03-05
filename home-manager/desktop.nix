@@ -3,18 +3,19 @@
 {
 	imports = [
 		./hyprland.nix
+		./i3.nix
+		./awesomewm.nix
 	];
 
 	xdg.portal = {
 		enable = true;
-		wlr.enable = true;
 		extraPortals = with pkgs; [
 			xdg-desktop-portal-wlr
 			xdg-desktop-portal-gtk
 		];
 	};
 
-	programs.dunst = {
+	services.dunst = {
 		enable = true;
 	};
 

@@ -4,12 +4,11 @@ let
 		# ${pkgs.waybar}/bin/waybar &
 		# ${pkgs.swww}/bin/swww init &
 		# sleep 1
-		# ${pkgs.swww}/bin/swww img ${./wallpaper.png} &
+		# ${pkgs.swww}/bin/swww img wallpaper.png &
 	'';
 in
 {
 	wayland.windowManager.hyprland.enable = true;
-	wayland.windowManager.hyprland.enableNvidiaPatches = true;
 	wayland.windowManager.hyprland.xwayland.enable = true;
 	wayland.windowManager.hyprland.settings = {
 		"$terminal" = "${pkgs.kitty}/bin/kitty";
@@ -87,12 +86,14 @@ in
 		animations = {
 			enabled = true;
 			bezier = "myBezier, 0.05, 0.9, 0.1, 1.05";
-			animation = "windows, 1, 3, myBezier";
-			animation = "windowsOut, 1, 3, default, popin 80%";
-			animation = "border, 1, 10, default";
-			animation = "borderangle, 1, 5, default";
-			animation = "fade, 1, 1, default";
-			animation = "workspaces, 1, 1, default";
+			animation = [
+				"windows, 1, 3, myBezier"
+				"windowsOut, 1, 3, default, popin 80%"
+				"border, 1, 10, default"
+				"borderangle, 1, 5, default"
+				"fade, 1, 1, default"
+				"workspaces, 1, 1, default"
+			];
 		};
 
 		dwindle = {
