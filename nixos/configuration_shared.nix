@@ -50,6 +50,9 @@
 		enable = true;
 		displayManager = {
 			sddm = {
+				enable = false;
+			};
+			startx = {
 				enable = true;
 			};
 		};
