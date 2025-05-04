@@ -31,7 +31,7 @@
 
 	networking.networkmanager.enable = true;
 
-	environment.systemPackages = with pkgs; [ vim micro wget ];
+	environment.systemPackages = with pkgs; [ vim micro wget htop ];
 
 	time.timeZone = "Europe/Minsk";
 	i18n.defaultLocale = "en_US.UTF-8";
