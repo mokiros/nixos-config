@@ -9,7 +9,6 @@
 		inputs.hardware.nixosModules.common-pc-laptop
 		inputs.hardware.nixosModules.common-pc-laptop-hdd
 		inputs.hardware.nixosModules.common-pc-laptop-ssd
-		inputs.hardware.nixosModules.common-pc-laptop-acpi_call
 		../configuration_shared.nix
 		./hardware-configuration.nix
 	];
