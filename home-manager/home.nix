@@ -18,6 +18,8 @@
 	programs.starship.enable = true;
 	programs.home-manager.enable = true;
 
+	programs.kitty.enable = true;
+
 	services.gpg-agent = {
 		enable = true;
 		defaultCacheTtl = 1800;

@@ -45,6 +45,8 @@
 		fzf
 		fishPlugins.grc
 		grc
+
+		kitty # for default hyprland config
 	];
 	programs.fish.enable = true;
 
