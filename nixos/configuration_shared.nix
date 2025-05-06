@@ -36,6 +36,7 @@
 		micro
 		wget
 		htop
+		git
 
 		fishPlugins.done
 		fishPlugins.fzf-fish
