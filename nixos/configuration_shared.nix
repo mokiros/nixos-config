@@ -58,6 +58,14 @@
 		wireplumber.enable = true;
 	};
 
+	services.openssh = {
+		enable = true;
+		settings = {
+			PermitRootLogin = "no";
+			PasswordAuthentication = true;
+		};
+	};
+
 	users.users = {
 		mokiros = {
 			initialPassword = "123";
