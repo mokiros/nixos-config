@@ -49,7 +49,7 @@
 			initialPassword = "123";
 			isNormalUser = true;
 			extraGroups = [ "wheel" ];
-			shell = pkgs.zsh;
+			shell = pkgs.bash;
 		};
 	};
 }
