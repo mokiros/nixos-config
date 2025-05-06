@@ -66,6 +66,9 @@
 		};
 	};
 
+	boot.supportedFilesystems = [ "nfs" ];
+	services.rpcbind.enable = true;
+
 	users.users = {
 		mokiros = {
 			initialPassword = "123";
