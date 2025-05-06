@@ -31,7 +31,21 @@
 
 	networking.networkmanager.enable = true;
 
-	environment.systemPackages = with pkgs; [ vim micro wget htop ];
+	environment.systemPackages = with pkgs; [
+		vim
+		micro
+		wget
+		htop
+
+		fishPlugins.done
+		fishPlugins.fzf-fish
+		fishPlugins.forgit
+		fishPlugins.hydro
+		fzf
+		fishPlugins.grc
+		grc
+	];
+	programs.fish.enable = true;
 
 	time.timeZone = "Europe/Minsk";
 	i18n.defaultLocale = "en_US.UTF-8";

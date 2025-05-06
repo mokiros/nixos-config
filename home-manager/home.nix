@@ -14,7 +14,7 @@
 		EDITOR = "${pkgs.micro}/bin/micro";
 	};
 
-	programs.zsh.enable = true;
+	programs.fish.enable = true;
 	programs.starship.enable = true;
 	programs.home-manager.enable = true;
 
