@@ -36,7 +36,6 @@
 	time.timeZone = "Europe/Minsk";
 	i18n.defaultLocale = "en_US.UTF-8";
 
-	sound.enable = true;
 	services.pipewire = {
 		enable = true;
 		alsa.enable = true;
