@@ -47,6 +47,7 @@
 		grc
 
 		kitty # for default hyprland config
+		firefox
 	];
 	programs.fish.enable = true;
 
