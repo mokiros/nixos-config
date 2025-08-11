@@ -25,5 +25,7 @@
 		udiskie
 
 		wayvnc
+
+		nerdfonts.fira-code
 	];
 }
