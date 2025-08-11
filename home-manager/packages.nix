@@ -23,5 +23,7 @@
 		networkmanagerapplet
 		blueman
 		udiskie
+
+		wayvnc
 	];
 }

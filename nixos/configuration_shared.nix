@@ -48,6 +48,8 @@
 
 		kitty # for default hyprland config
 		firefox
+
+		wayvnc
 	];
 	programs.fish.enable = true;
 
@@ -74,6 +76,18 @@
 
 	boot.supportedFilesystems = [ "nfs" ];
 	services.rpcbind.enable = true;
+
+	security.polkit.enable = true;
+
+	systemd.services.wayvnc = {
+		enable = true;
+		description = "WayVNC Service";
+		serviceConfig = {
+			ExecStart = "${pkgs.wayvnc}/bin/wayvnc 0.0.0.0";
+			Restart = "always";
+		};
+		wantedBy = [ "multi-user.target" ];
+	};
 
 	users.users = {
 		mokiros = {
